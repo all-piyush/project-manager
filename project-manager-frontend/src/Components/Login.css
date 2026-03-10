@@ -1,0 +1,66 @@
+#login{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    gap:4rem;
+background: linear-gradient(135deg,#f5f8ff,#cfdcf0);
+}
+.illustration{
+    width: 45rem;
+    height: 100vh;
+}
+#login-form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    align-self: center;
+    padding: 1.5rem;
+    gap:1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+#login-form input{
+    width: 100%;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+.login-button{
+    background-color: #1e96f3;
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    align-self: center;
+    cursor: pointer;
+}
+.switch{
+    background-color: white;
+    border: none;
+    color: #1e96f3;
+    cursor: pointer;
+}
+.button-wrapper{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+#role-label{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.role-button{
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+.active-button{
+    background-color: #1e96f3;
+    color: white;
+}

@@ -17,6 +17,7 @@ const taskschema=new mongoose.Schema({
     status:{
         type:String,
         enum:['active','pending','completed'],
+        default:'pending',
         required:true,
     },
     project:{

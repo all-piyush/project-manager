@@ -1,0 +1,45 @@
+#addprojects{
+    flex:1;
+    padding: 1rem;
+}
+.addproject{
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 22rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:2rem;
+    background-color: antiquewhite;
+    border-radius: 0.5rem;
+}
+.addproject h1{
+    
+}
+.addproject input{
+    height: 2rem;
+    width:100%;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+.addproject textarea{
+    height: 10rem;
+    width: 100%;
+    border:1px solid black;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+.addproject button{
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    align-self: center;
+}

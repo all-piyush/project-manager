@@ -1,0 +1,42 @@
+
+#admindashboard-content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    flex: 1;
+    background-color: #F6F8FC;
+}
+#admindashboard-progress{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap:2rem;
+}
+#admindashboard-progress>div {
+    padding: 1rem;
+    background-color: #f5f6f8;
+    box-shadow:0 10px 10px rgba(0,0,0,0.08) ;
+    border-radius: 1rem;
+}
+.admindashboard-progress-innera{
+    font-size: x-large;
+    font-weight: bold;
+    color: #0F172A;
+}
+.admindashboard-progress-innerb{
+    font-size: xx-large;
+    color:#3B82F6;
+}
+#task-status{
+    padding: 1rem;
+    background-color: #f5f6f8;
+    box-shadow:0 10px 10px rgba(0,0,0,0.08) ;
+    width: 300px;
+    border-radius: 1rem;
+}
+.task-completed{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}

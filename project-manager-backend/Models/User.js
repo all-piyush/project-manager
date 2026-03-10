@@ -15,6 +15,10 @@ const userschema=new mongoose.Schema({
         type:String,
         enum:['manager','member']
     },
-    
+    position:{
+        type:String,
+        enum:['developer','designer','analyst','tester'],
+        required:true,
+    }
 },{timestamps:true})
 module.exports=mongoose.model('User',userschema);

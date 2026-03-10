@@ -1,6 +1,7 @@
 const jwt=require('jsonwebtoken');
 exports.checkmanager=async(req,res,next)=>{
     try{
+        console.log(req.user);
         if(req.user.role!=='manager'){
             return res.status(401).json({
                 message:"role didn't match",
@@ -32,9 +33,10 @@ exports.checkmember=async(req,res,next)=>{
         })
     }
 }
-exports.verify=async(req,res)=>{
+exports.verify=async(req,res,next)=>{
     try{
-        const token=req.cookies.token;
+        
+        const token=req.cookies.token || req.cookie.token;
         if(!token){
             return res.status(400).json({
                 message:"User not logged in",
@@ -54,6 +56,6 @@ exports.verify=async(req,res)=>{
 exports.checkauth=async(req,res)=>{
     return res.status(200).json({
         message:"User Already Logged In",
-        success:true,
+        success:true, 
     })
 }
